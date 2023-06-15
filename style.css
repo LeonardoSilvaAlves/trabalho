@@ -216,7 +216,7 @@ button[type="submit"]:hover {
 
 
 /* Estilos para responsividade */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
 /* Tornar o header flexível em dispositivos menores */
 header {
   display: flex;
