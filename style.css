@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+/* Estilos da paleta de cores */
+:root {
+  --primary-color: #BFB5AF;
+  --secondary-color: #ECE2D0;
+  --tertiary-color: #D5B9B2;
+  --accent-color: #A26769;
+  --dark-color: #582C4D;
+  --light-color: #F9F6F7;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  margin: 0;
+}
+
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  width: 300px;
+  border-radius: 5px;
+  margin-left: 245px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover{
+  background-color: var(--dark-color);
+} 
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 28px;
+  padding: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.buttonInicio {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+}
+.buttonInicio:hover {
+  background-color: var(--dark-color);
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  width: 150px;
+  border-radius: 5px;
+
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+}
+
+.button-header {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-header:hover {
+  background-color: var(--dark-color);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container h1 {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.header-container nav {
+  text-align: right;
+}
+
+.main-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#introducao {
+  margin-top: 45px;
+}
+
+section {
+  margin-bottom: 45px;
+  padding: 30px;
+  background-color: var(--light-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  margin-left: 18%;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--dark-color);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--dark-color);
+}
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+
+/* Estilos para responsividade */
+@media screen and (max-width: 768px) {
+/* Tornar o header flexível em dispositivos menores */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Aumentar o tamanho da fonte do título no header em dispositivos menores */
+header h1 {
+  font-size: 24px;
+}
+
+/* Aumentar o espaçamento entre os botões do header em dispositivos menores */
+header .button {
+  margin-top: 10px;
+}
+
+/* Tornar o menu de navegação flexível em dispositivos menores */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+/* Ocultar o menu de navegação em dispositivos menores */
+nav ul {
+  display: none;
+}
+
+/* Mostrar o menu de navegação ao clicar no ícone de menu */
+nav .menu-toggle:checked + ul {
+  display: flex;
+}
+
+/* Estilizar o ícone do menu */
+nav .menu-toggle {
+  display: none;
+}
+
+nav .menu-toggle-label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+nav .menu-toggle-label::after {
+  content: '';
+  width: 15px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav .menu-toggle:checked + .menu-toggle-label::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+nav .menu-toggle:checked + .menu-toggle-label::before {
+  content: '';
+  width: 15px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Tornar as seções flexíveis em dispositivos menores */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 50px;
+}
+
+/* Diminuir o espaçamento interno das seções em dispositivos menores */
+section h2 {
+  margin-bottom: 20px;
+}
+
+section p {
+  margin-bottom: 30px;
+}
+
+/* Ajustar o tamanho da fonte em dispositivos menores */
+section p,
+section li {
+  font-size: 16px;
+}
+
+/* Aumentar o espaçamento entre os elementos em dispositivos menores */
+section li {
+  margin-bottom: 10px;
+}
+
+/* Aumentar o espaçamento entre as seções em dispositivos menores */
+section + section {
+  margin-top: 50px;
+}
+
+/* Adicionar uma quebra de linha no menu em dispositivos menores */
+nav ul li {
+  display: block;
+}
+
+/* Aumentar o espaçamento entre os itens do menu em dispositivos menores */
+nav ul li a {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Adicionar estilos para a seção de formulário de contato em dispositivos menores */
+.contact-section {
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section form input[type="text"],
+.contact-section form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-section form button {
+  padding: 10px 20px;
+}
+
+/* Adicionar estilos para a seção de rodapé em dispositivos menores */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para dispositivos maiores */
+@media screen and (min-width: 768px) {
+  /* Exibir o menu de navegação em dispositivos maiores */
+  nav ul {
+    display: flex;
+  }
+
+  /* Remover o ícone do menu em dispositivos maiores */
+  nav .menu-toggle-label {
+    display: none;
+  }
+
+  /* Redefinir estilos de seções para dispositivos maiores */
+  section {
+    padding: 100px;
+    text-align: left;
+  }
+
+  section h2 {
+    margin-bottom: 30px;
+  }
+
+  section p {
+    margin-bottom: 40px;
+  }
+
+  /* Ajustar o tamanho da fonte em dispositivos maiores */
+  section p,
+  section li {
+    font-size: 18px;
+  }
+
+  /* Ajustar o espaçamento entre os elementos em dispositivos maiores */
+  section li {
+    margin-bottom: 15px;
+  }
+
+  /* Ajustar o espaçamento entre as seções em dispositivos maiores */
+  section + section {
+    margin-top: 100px;
+  }
+
+  /* Ajustar o espaçamento do formulário de contato em dispositivos maiores */
+  .contact-section {
+    text-align: left;
+  }
+
+  .contact-section form {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-section form input[type="text"],
+  .contact-section form textarea {
+    margin-right: 10px;
+  }
+}
+}
