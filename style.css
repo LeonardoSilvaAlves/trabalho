@@ -222,7 +222,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   padding: 20px;
 }
 
@@ -230,6 +229,7 @@ header {
 header h1 {
   font-size: 24px;
 }
+
 
 /* Aumentar o espaçamento entre os botões do header em dispositivos menores */
 header .button {
@@ -301,17 +301,20 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  width: 300px;
+  margin-left: 70px;
   padding: 50px;
 }
 
 /* Diminuir o espaçamento interno das seções em dispositivos menores */
 section h2 {
+  font-size: 15px;
   margin-bottom: 20px;
 }
 
 section p {
   margin-bottom: 30px;
+  font-size: 10px;
 }
 
 /* Ajustar o tamanho da fonte em dispositivos menores */
